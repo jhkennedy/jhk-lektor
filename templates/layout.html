@@ -1,29 +1,50 @@
 <!doctype html>
 <meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/reset.css'|url }}">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — jhkennedy.org</title>
-<body>
-  <header>
-    <h1>jhkennedy.org</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2017 by Joseph H. Kennedy.
-  </footer>
+<title>{% block title %}Welcome{% endblock %} | jhkennedy.org</title>
+<body class="container">
+    <header>
+        <div class="name">
+            <h1>Joseph H Kennedy</h1>
+        </div>
+        <div class="socialbar">
+            <ul class="social">
+                <li><a href="https://www.mendeley.com/profiles/joseph-h-kennedy/" target="_blank">
+                    <img src="{{ '/static/images/mendeley.png'|url }}">
+                </a></li>
+                <li><a href="http://scholar.google.com/citations?user=chPMeM4AAAAJ" target="_blank">
+                    <img src="{{ '/static/images/google_scholar.png'|url }}">
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/jhkennedy" target="_blank">
+                    <img src="{{ '/static/images/in.png'|url }}">
+                </a></li>
+                <li><a href="https://twitter.com/aJollyAdventure" target="_blank">
+                    <img src="{{ '/static/images/twitter.png'|url }}">
+                </a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="navbar-nav">
+                <li{% if this._path == '/' %} class="active"{% endif %}><a href="{{ '/'|url }}">Welcome</a></li>
+                {% for href, title in [
+                    ['/research', 'Research'],
+                    ['/cv', 'C. V.'],
+                    ['/code', 'Code'],
+                    ['/of-interest', 'Of interest']
+                    ] %}
+                    <li{% if this.is_child_of(href) %} class="active"{% endif %}><a href="{{ href|url }}">{{ title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page">
+            {% block body %}{% endblock %}
+        </div>
+    </main>
+    <footer>
+        &copy; Copyright 2018, Joseph H. Kennedy.
+    </footer>
 </body>
