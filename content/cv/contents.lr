@@ -1,7 +1,7 @@
-title: About this Website
+_model: vitae
+---
+title: My Curriculum Vitae
 ---
 body:
 
-This is a website that was made with the Lektor quickstart.
-
-And it does not contain a lot of information.
+Click [here](/static/joecv.pdf) to download a copy.

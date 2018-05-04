@@ -1,8 +1,24 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/reset.css'|url }}">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} | jhkennedy.org</title>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://jhkennedy.org/sites/default/files/signature_favico.ico" />
+    <link rel="stylesheet" href="{{ '/static/reset.css'|url }}">
+    <link rel="stylesheet" href="{{ '/static/flexslider.css'|url }}">
+    <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+    <link rel="stylesheet" href="{{ '/static/colors.css'|url }}">
+    <link rel="stylesheet" href="{{ '/static/custom.css'|url }}">
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="{{ '/static/jquery.flexslider-min.js'|url }}"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).on('load', function() {
+        $('.flexslider').flexslider();
+      });
+    </script>
+    <title>{% block title %}Welcome{% endblock %} | jhkennedy.org</title>
+</head>
 <body class="container">
     <header>
         <div class="name">
@@ -26,7 +42,7 @@
         </div>
         <nav>
             <ul class="navbar-nav">
-                <li{% if this._path == '/' %} class="active"{% endif %}><a href="{{ '/'|url }}">Welcome</a></li>
+                <li{% if this._path == '/' %} class="active"{% endif %}><a href="{{ '/'|url }}">Home</a></li>
                 {% for href, title in [
                     ['/research', 'Research'],
                     ['/cv', 'C. V.'],
