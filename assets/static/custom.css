@@ -28,6 +28,15 @@ h3.flex-caption-text {
     padding: 20px 10px;
 }
 
+.home ul {
+    list-style: circle outside;
+    padding: 0 40px;
+}
+
+.home li {
+    padding-bottom: 5px;
+}
+
 .title {
     margin-bottom: 1em;
 }

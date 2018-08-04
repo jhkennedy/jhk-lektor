@@ -4,8 +4,17 @@ title: Welcome!
 ---
 body:
 
-I am currently a Computational Scientist in Glaciology for the [Climate Change
+I am a *Computational Scientist in Glaciology* for the [Climate Change
 Science Institute](https://climatechangescience.ornl.gov/) at [Oak Ridge National
-Laboratory](http://www.ornl.gov/). For more information see my research and code pages.
+Laboratory](http://www.ornl.gov/). I develop (primarily) python-based, open-source
+scientific software and am currently:
 
-You can contact me at: [me@jhkennedy.org](mailto:me@jhkennedy.org)
+* the lead developer of [LIVVkit](https://github.com/LIVVkit/LIVVkit), a verification
+  and validation toolkit for ice sheet models -- for both stand alone models and those coupled
+  to Earth system models.
+* [E3SM](https://e3sm.org/) regular staff in the infrastructure group where I work on the case
+control system [CIME](https://e3sm.org/resources/tools/other-tools/cime/),  non-bit-for-bit climate
+  reproducibility testing with [EVV](https://github.com/LIVVkit/evv4esm), and analysis of E3SM's
+  coupled ice sheet model [MALI](https://e3sm.org/resources/tools/diagnostic-tools/mpas-analysis/).
+
+See my [research](/research/) and [software](/software/) pages for more information.
