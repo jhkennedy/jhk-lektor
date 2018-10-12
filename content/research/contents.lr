@@ -1,9 +1,27 @@
-title: Projects
+title: Research
+_model: page
 ---
 body:
 
-This is a list of the projects:
+Climate change is not only a complex scientific topic, but an increasingly pressing moral and
+political issue. The impact of climate change on human and natural systems in the future,
+and the decisions arising from those impacts, primarily rely on climate and Earth system model
+projections. It is, therefore, supremely critical to build *credible* models.
 
-* Project 1
-* Project 2
-* Project 3
+The overarching theme to my research is *"How do we build credible models?"* I develop tools for ice
+sheet and Earth system modelers to help them evaluate and understand their models. And to
+provide the results of their evaluations to the wider scientific community, stake holders, and
+decision makes in a clear and understandable way.
+
+Formally, I use verification and validation techniques to help developers build confidence and
+insight into their models, and focus on presenting those results in an understandable and contextual
+way.
+
+### Building credible ice sheet models
+
+Stuff!
+
+### Climate reproducibility
+
+More stuff
+
