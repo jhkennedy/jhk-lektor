@@ -4,12 +4,12 @@ title: Welcome!
 ---
 body:
 
-I am a *Computational Scientist in Glaciology* for the [Climate Change
+I am a Computational Scientist in Glaciology for the [Climate Change
 Science Institute](https://climatechangescience.ornl.gov/) at [Oak Ridge National
 Laboratory](http://www.ornl.gov/). I develop (primarily) python-based, open-source
 scientific software and am currently:
 
-* the lead developer of [LIVVkit](https://github.com/LIVVkit/LIVVkit), a verification
+* The technical and visionary lead of [LIVVkit](https://github.com/LIVVkit/LIVVkit), a verification
   and validation toolkit for ice sheet models -- for both stand alone models and those coupled
   to Earth system models.
 * [E3SM](https://e3sm.org/) regular staff in the infrastructure group where I work on the case
