@@ -3,7 +3,24 @@
 {% block body %}
     <h2 class="page-title">{{ this.title }}</h2>
     <div class="center_text">{{ this.body }}</div>
-    <iframe src="{{ '/ViewerJS/?zoom=page-width#../static/Kennedy_cv.pdf'|url }}"
-            width='960' height='1024' allowfullscreen>
-    </iframe>
+    <div class="tabs-nav">
+        <button class="tab-buttton" onclick="openTab(event, 'Resume')" id="defaultOpen">Résumé</button>
+        <button class="tab-buttton" onclick="openTab(event, 'Curriculum_vitae')">
+            Curriculum vitae
+        </button>
+    </div>
+    <div id="Resume" class="tab-content">
+        <iframe src="{{ '/ViewerJS/?zoom=page-width#../static/Kennedy_resume.pdf'|url }}"
+                width='960' height='1024' allowfullscreen>
+        </iframe>
+    </div>
+    <div id="Curriculum_vitae" class="tab-content">
+        <iframe src="{{ '/ViewerJS/?zoom=page-width#../static/Kennedy_cv.pdf'|url }}"
+                width='960' height='1024' allowfullscreen>
+        </iframe>
+    </div>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 {% endblock %}

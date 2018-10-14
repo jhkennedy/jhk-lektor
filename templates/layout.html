@@ -12,6 +12,7 @@
         crossorigin="anonymous">
     </script>
     <script src="{{ '/static/js/jquery.flexslider-min.js'|url }}"></script>
+    <script src="{{ '/static/js/custom.js'|url }}"></script>
     <script type="text/javascript" charset="utf-8">
       $(window).on('load', function() {
         $('.flexslider').flexslider();
@@ -46,7 +47,7 @@
                 {% for href, title in [
                     ['/research', 'Research'],
                     ['/software', 'Software'],
-                    ['/cv', 'C. V.'],
+                    ['/cv', 'Résumé/C.V.'],
                     ['/of-interest', 'Of interest']
                     ] %}
                     <li{% if this.is_child_of(href) %} class="active"{% endif %}><a href="{{ href|url }}">{{ title }}</a>
