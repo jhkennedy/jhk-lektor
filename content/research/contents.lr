@@ -1,4 +1,6 @@
-title: Research
+title:
+
+Research
 _model: page
 ---
 body:
@@ -11,10 +13,10 @@ projections. It is, therefore, supremely critical to build *credible* models.
 My research is focused on answering the fundamental questions of *How confident are we in our
 models?* and *How credible (trusted) are our models in the scientific community?* To that end, I
 develop tools for ice sheet and Earth system modelers to help them evaluate and understand their
-models. And to provide the results of their evaluations to the wider scientific community, stake
-holders, and decision makes in a clear and understandable way.
+models; and to provide the results of their evaluations to the wider scientific community, stake
+holders, and decision makers in a clear and understandable way.
 
-Formally, I use verification and validation techniques to help developers build confidence and
+Formally, I use verification and validation (V&V) techniques to help developers build confidence and
 insight into their models, and focus on presenting those results in an understandable and contextual
 way so that they can be used to build model credibility.
 
@@ -34,7 +36,7 @@ that they are understandable. To this end, LIVVkit has adopted a free (libre) so
 where not only is the source code open, but all observational data and an example set of model
 output used for the analyses is provided freely. Furthermore, LIVVkit results are provided in a
 portable website which can be easily shared and hosted, so that the results can be available to the
-scientific community. Importantly, an initial context is provided to help views understand the
+scientific community. Importantly, an initial context is provided to help viewers understand the
 analyses and references to relevant journal articles describing the data and methods are provided
 with each analysis.
 
@@ -55,10 +57,10 @@ where the critical value for rejecting the null hypothesis is determined by usin
 resampling.
 
 EVV is currently being extended to include a other statistical test such as the Enery test,
-Crossmatch test, and the Anderson-Darling test which all compare the ensemble distributitons in
+Crossmatch test, and the Anderson-Darling test which all compare the ensemble distributions in
 different ways. Due to the complexity of fully active Earth system model, and the sensitivity of the
 climate, there is a massive variety of changes that can result in a different climate, so having
 multiple complementary classifiers is necessary for determining the equality of climate
-ensembles.Furthermore, other ensemble testing techniques to determine changing climates are being
+ensembles. Furthermore, other ensemble testing techniques to determine changing climates are being
 developed in partnership with Pacific Northwest National Laboratory scientists Dr. Rash, Dr. Singh
 and Dr. Wan and will be included in EVV in the future.
