@@ -63,6 +63,18 @@ h3.flex-caption-text {
     font-style: italic;
 }
 
+.page ul{
+    padding-left: 40px;
+}
+
+.page li {
+    list-style: circle;
+}
+
+.page h4 {
+    padding-top: 0.5em;
+}
+
 .center_text {
 	text-align: center;
 }
