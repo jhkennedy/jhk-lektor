@@ -75,6 +75,14 @@ h3.flex-caption-text {
     padding-top: 0.5em;
 }
 
+.vitae .page-title {
+    margin: 20px 20px;
+}
+
+.vitae .tabs-nav {
+    margin: 20px 20px;
+}
+
 .center_text {
 	text-align: center;
 }
