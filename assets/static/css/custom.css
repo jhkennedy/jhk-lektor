@@ -65,10 +65,16 @@ h3.flex-caption-text {
 
 .page ul{
     padding-left: 40px;
+    list-style: circle;
 }
 
-.page li {
-    list-style: circle;
+.page ol{
+    padding-left: 40px;
+    list-style: decimal;
+}
+
+.page h3 {
+    padding-top: 0.5em;
 }
 
 .page h4 {
