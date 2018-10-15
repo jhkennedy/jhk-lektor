@@ -1,13 +1,12 @@
 title: Goodbye Drupal
 ---
-pub_date: 2018-10-12
+pub_date: 1970-01-01
 ---
 author: Joseph H. Kennedy
 ---
 
 body:
 
-### Oct. 12, 2018 -- NOTE: This website is being converted from Drupal to a static site built with Lektor this weekend, please check back on monday for a site with significantly more content. Thanks!   
-
+... coming soon ... 
 
 In this post, I'll detail my reasoning for dropping Drupal, moving to a static site generator, and why I picked Lektor over popular alternatives.
