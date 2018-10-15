@@ -1,10 +1,38 @@
-title: Projects
+title: My Current Software Projects
 ---
 body:
 
-### Oct. 12, 2018 -- NOTE: This website is being converted from Drupal to a static site built with Lektor this weekend, please check back on monday for a site with significantly more content. Thanks!   
+Most of what I work on is open source on github -- [see my profile](https://github.com/jhkennedy).
+Below are the main projects I'm working on right now.
+
+### LIVVkit
+
+To learn more about LIVVkit:
+* Read the [docs](https://livvkit.github.io/Docs/)
+* See the [source code](https://github.com/LIVVkit/LIVVkit)
+* View an example [verification website](https://livvkit.github.io/livvkit/index.html)
+
+#### LEX
+
+To learn more about LEX:
+* See the [extensions repository](https://code.ornl.gov/LIVVkit/lex)
+* View an example [validation website](https://jhkennedy.org/LEX/vv_evans2018/validation/smb_icecores.html)
 
 
-... coming soon ...
+### EVV
 
-For now, you can see much of my software work by visiting my github page: https://github.com/jhkennedy
+To learn more about EVV:
+* Read the [docs](https://github.com/E3SM-Project/E3SM/tree/master/cime/scripts/climate_reproducibility)
+* See the [source code](https://github.com/LIVVkit/evv4esm)
+* See an example of the [output website](https://livvkit.github.io/evv4esm/index.html)
+
+
+### E3SM
+
+
+### CIME
+
+
+### Everything else
+
+... github ...
