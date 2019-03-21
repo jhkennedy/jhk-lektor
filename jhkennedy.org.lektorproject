@@ -1,2 +1,7 @@
 [project]
 name = jhkennedy.org
+
+[servers.ghpages]
+enabled = yes
+default = yes
+target = ghpages://jhkennedy/jhkennedy.github.io?cname=jhkennedy.org
