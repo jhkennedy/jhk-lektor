@@ -1,7 +1,12 @@
 [project]
 name = jhkennedy.org
 
-[servers.ghpages]
+[servers.production]
+name = Production
 enabled = yes
 default = yes
-target = ghpages://jhkennedy/jhkennedy.github.io?cname=jhkennedy.org
+target = ghpages+ssh://jhkennedy/jhkennedy.github.io?cname=jhkennedy.org
+
+[servers.ghpages]
+enabled = yes
+target = ghpages+https://jhkennedy/jhkennedy.github.io?cname=jhkennedy.org
