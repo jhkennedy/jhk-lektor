@@ -1,4 +1,4 @@
-name: jhkennedy.org
+name: "jhkennedy.org"
 channels:
     - conda-forge
     - defaults

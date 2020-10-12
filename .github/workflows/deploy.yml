@@ -18,10 +18,11 @@ jobs:
         with:
           auto-update-conda: true
           python-version: 3.8
-          activate-environment: jhkennedy.org
+          activate-environment: "jhkennedy.org"
           environment-file: conda-env.yml
 
       - name: Build
+        shell: bash -l {0}
         run: lektor build
 
       - name: Deploy
@@ -29,4 +30,5 @@ jobs:
         env:
           LEKTOR_DEPLOY_USERNAME: ${{ secrets.LEKTOR_DEPLOY_USERNAME }}
           LEKTOR_DEPLOY_PASSWORD: ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}
+        shell: bash -l {0}
         run: lektor deploy ghpages
