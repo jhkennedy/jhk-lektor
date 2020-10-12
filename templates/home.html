@@ -5,8 +5,7 @@
         <ul class="slides">
             {% for href, caption, image in [
                     ['/cv', 'My résumé or curriculum vitae', '/static/images/slide_joe_vista.jpg'|url ],
-                    ['/of-interest', 'Useful things of interest',  '/static/images/slide_joe_kayak.jpg'|url ],
-                    ['/research', 'My research interests', '/static/images/slide-image-3.jpg'|url ],
+                    ['/research', 'My research interests', '/static/images/slide_joe_kayak.jpg'|url ],
                     ] %}
                     <li{% if this.is_child_of(href) %} class="active"{% endif %}>
                     <a href="{{ href|url }}">
