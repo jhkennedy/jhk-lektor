@@ -1,0 +1,32 @@
+name: "Deploy jhkennedy.org"
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: goanpeca/setup-miniconda@v1
+        with:
+          auto-update-conda: true
+          python-version: 3.8
+          activate-environment: jhkennedy.org
+          environment-file: conda-env.yml
+
+      - name: Build
+        run: lektor build
+
+      - name: Deploy
+        if: github.ref == 'refs/heads/master'
+        env:
+          LEKTOR_DEPLOY_USERNAME: ${{ secrets.LEKTOR_DEPLOY_USERNAME }}
+          LEKTOR_DEPLOY_PASSWORD: ${{ secrets.LEKTOR_DEPLOY_PASSWORD }}
+        run: lektor deploy ghpages
