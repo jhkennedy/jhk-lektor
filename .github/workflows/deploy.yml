@@ -11,6 +11,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: jhkennedy.org
+      url: https://jhkennedy.org
     steps:
       - uses: actions/checkout@v2
 
